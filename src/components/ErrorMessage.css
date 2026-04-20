@@ -1,0 +1,40 @@
+.error-box {
+  max-width: 720px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,69,0,0.08);
+  border: 1px solid rgba(255,69,0,0.3);
+  border-radius: 4px;
+  padding: 14px 16px;
+  animation: shake 0.4s ease;
+}
+
+.error-icon { font-size: 16px; }
+
+.error-text {
+  flex: 1;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent2);
+}
+
+.error-dismiss {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  transition: color 0.2s;
+}
+
+.error-dismiss:hover { color: var(--text); }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  60% { transform: translateX(6px); }
+}
